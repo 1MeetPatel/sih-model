@@ -93,13 +93,11 @@ def process_image(input_img, model_name, outscale, denoise_strength, face_enhanc
     return output_rgb
 
 def create_ui():
-    title = "✨ Real-ESRGAN Image & Face Super-Resolution Studio"
     description = """
     Upload any low-resolution image to restore details, upscale resolution (2x, 4x, etc.), and optionally apply face enhancement using GFPGAN.
     """
     
-    with gr.Blocks(title="Real-ESRGAN Web Studio") as app:
-        gr.Markdown(f"# {title}")
+    with gr.Blocks() as app:
         gr.Markdown(description)
 
         with gr.Row():

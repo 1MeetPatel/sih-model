@@ -1,3 +1,7 @@
+> ⚠️ **LICENSE NOTICE** — This software is **proprietary** and may **NOT** be used, copied, modified, or distributed without **prior written permission** from the author. See [LICENSE](./LICENSE) for full terms.
+
+---
+
 # Real-ESRGAN — Super Resolution with CUDA (Python 3.13 Compatible)
 
 Real-ESRGAN aims at developing **Practical Algorithms for General Image/Video Restoration**.

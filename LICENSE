@@ -1,29 +1,70 @@
-BSD 3-Clause License
+PROPRIETARY SOFTWARE LICENSE
 
-Copyright (c) 2021, Xintao Wang
-All rights reserved.
+Copyright (c) 2026 Meet Patel (1MeetPatel). All Rights Reserved.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+IMPORTANT — PLEASE READ CAREFULLY BEFORE USING THIS SOFTWARE.
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+This software, including all source code, documentation, assets, models,
+scripts, configuration files, and any associated materials (collectively,
+the "Software"), is the exclusive proprietary property of Meet Patel
+("the Author").
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                        RESTRICTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-3. Neither the name of the copyright holder nor the names of its
-   contributors may be used to endorse or promote products derived from
-   this software without specific prior written permission.
+WITHOUT PRIOR WRITTEN PERMISSION from the Author, NO PERSON OR ENTITY
+is permitted to:
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  1. USE this Software for any purpose — personal, academic, commercial,
+     or otherwise.
+
+  2. COPY, REPRODUCE, or DUPLICATE any part of this Software.
+
+  3. MODIFY, ADAPT, TRANSLATE, or create DERIVATIVE WORKS based on
+     this Software.
+
+  4. DISTRIBUTE, PUBLISH, SUBLICENSE, SELL, or otherwise TRANSFER
+     copies of this Software to any third party.
+
+  5. DEPLOY or HOST this Software in any environment, including but not
+     limited to servers, cloud platforms, or embedded systems.
+
+  6. REVERSE ENGINEER, DECOMPILE, or DISASSEMBLE any portion of
+     this Software.
+
+  7. USE the name, branding, or identity of the Author or this project
+     to endorse or promote any product derived from this Software.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                     REQUESTING PERMISSION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+To request permission to use, modify, or distribute this Software,
+you must contact the Author at:
+
+  GitHub  : https://github.com/1MeetPatel
+  Subject : "Permission Request — SIH Real-ESRGAN"
+
+All permission requests must be made in writing and are subject to
+approval at the sole discretion of the Author.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                         DISCLAIMER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Unauthorized use of this Software constitutes a violation of applicable
+intellectual property laws and may result in civil and/or criminal
+penalties.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

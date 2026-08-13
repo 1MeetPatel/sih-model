@@ -1,0 +1,39 @@
+# Model weights (too large for GitHub)
+weights/*.pth
+
+# Output results
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+env/
+venv/
+.env
+
+# BasicSR cloned repo (installed separately)
+BasicSR/
+
+# Egg info and build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/

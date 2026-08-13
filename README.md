@@ -4,13 +4,13 @@
 
 # Real-ESRGAN — Super Resolution with CUDA (Python 3.13 Compatible)
 
-Real-ESRGAN aims at developing **Practical Algorithms for General Image/Video Restoration**.
+A super-resolution image restoration tool with **Practical Algorithms for General Image/Video Restoration**.
 
-This repo is a working, fixed setup of [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) with:
-- ✅ Python 3.13 compatibility fixes
+Features:
+- ✅ Python 3.13 compatible
 - ✅ CUDA 12.x support (PyTorch 2.6.0+cu124)
 - ✅ Gradio Web UI (`app.py`)
-- ✅ Fixed directory/NoneType handling in inference script
+- ✅ CLI batch inference
 
 ---
 
@@ -129,7 +129,10 @@ The `get_version()` function in `setup.py` used `exec()` + `locals()` which brea
 
 ---
 
-## Credits
+## 👤 Author
 
-Original paper & code: [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)  
-Paper: [Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data](https://arxiv.org/abs/2107.10833)
+**Meet Patel**  
+GitHub: [https://github.com/1MeetPatel](https://github.com/1MeetPatel)
+
+> © 2026 Meet Patel. All Rights Reserved.  
+> This software may **NOT** be used without prior written permission. See [LICENSE](./LICENSE).

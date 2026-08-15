@@ -1,0 +1,45 @@
+# Master Configuration Pointer
+# Modify or override settings below, or pass --config configs/custom.yaml
+
+input:
+  bands: [1, 2, 3]
+  nodata_value: 0
+  dtype_normalization: "percentile"
+
+tiling:
+  tile_size: 512
+  overlap: 128
+  batch_size: 4
+
+model:
+  architecture: "unet"
+  encoder: "resnet34"
+  encoder_weights: "imagenet"
+  in_channels: 3
+  classes: 1
+
+inference:
+  device: "auto"
+  amp: false
+  batch_size: 4
+  threshold: 0.35
+  blending: "gaussian"
+
+roads:
+  minimum_width_m: 6.1
+  minimum_segment_length_m: 15.0
+  line_width_px: 2
+  render_color: "red"
+
+change_detection:
+  buffer_m: 3.5
+  minimum_change_length_m: 20.0
+  overlap_iou_threshold: 0.25
+  detect_widening: false
+
+output:
+  export_geopackage: true
+  export_geojson: true
+  export_probability_tif: true
+  export_mask_tif: true
+  export_visualization_png: true

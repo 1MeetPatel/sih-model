@@ -1,0 +1,66 @@
+# Default Configuration for Satellite Road Extraction & Change Detection Pipeline
+
+input:
+  bands: [1, 2, 3]
+  target_crs: null # null means keep native CRS, or specify e.g. "EPSG:3857"
+  nodata_value: 0
+  dtype_normalization: "percentile" # "percentile", "minmax", "zscore"
+  percentile_min: 2.0
+  percentile_max: 98.0
+
+tiling:
+  tile_size: 512
+  overlap: 128
+  batch_size: 4
+  min_valid_pixel_ratio: 0.05
+
+model:
+  architecture: "unet" # "unet", "deeplabv3plus"
+  encoder: "resnet34"
+  encoder_weights: "imagenet"
+  in_channels: 3
+  classes: 1
+
+inference:
+  device: "auto" # "auto", "cuda", "cpu"
+  amp: false # Automatic Mixed Precision (true if CUDA available)
+  batch_size: 4
+  threshold: 0.35 # Probability threshold for initial binary mask
+  blending: "gaussian" # "gaussian", "linear", "uniform"
+  gaussian_sigma: 0.25
+
+postprocessing:
+  morphology_open_radius: 1
+  morphology_close_radius: 2
+  min_component_area_pixels: 20
+  hole_fill_max_area: 50
+
+roads:
+  target_width_ft: 20.0
+  minimum_width_m: 6.096 # ~6.1 meters
+  minimum_segment_length_m: 15.0
+  width_estimation_method: "distance_transform" # "distance_transform", "cross_section"
+  width_sampling_step_px: 3
+  line_width_px: 2
+  render_color: "red" # "red", "yellow"
+
+change_detection:
+  buffer_m: 3.5
+  minimum_change_length_m: 20.0
+  overlap_iou_threshold: 0.25
+  detect_widening: false
+  widening_threshold_m: 2.0
+  confidence_weights:
+    segmentation: 0.40
+    length: 0.20
+    overlap: 0.30
+    width_consistency: 0.10
+
+output:
+  export_geopackage: true
+  export_geojson: true
+  export_shapefile: false
+  export_probability_tif: true
+  export_mask_tif: true
+  export_visualization_png: true
+  compression: "deflate"

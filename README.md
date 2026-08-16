@@ -1,10 +1,52 @@
-# Production-Quality AI Satellite Road Extraction & Temporal Change Detection
+# 🛰️ AI Satellite Road Extraction & Topology Analyzer
 
-A modular, terminal-driven geospatial AI system for extracting roads **$\ge 20\text{ feet} \ (\approx 6.1\text{ meters})$** from large satellite GeoTIFF imagery and performing temporal road-change detection between Before and After scenes.
+A high-precision deep learning pipeline to extract and vectorize road networks from satellite imagery across Indian cities, planned grids, dense urban areas, and mountain terrains.
 
 ---
 
-## Key Features
+## ⚡ Quick Start: Run in Your Terminal (Super Simple!)
+
+You can run the road detection model on any satellite image with **just one simple command**:
+
+### 1. Clone & Install Dependencies
+Open your terminal (PowerShell / Command Prompt / Bash) and run:
+```bash
+git clone https://github.com/1MeetPatel/sih-model.git
+cd sih-model
+pip install torch torchvision opencv-python scikit-image scipy matplotlib segmentation-models-pytorch
+```
+
+### 2. Run the Model on Any Image
+Place your satellite image (PNG or JPG) and run:
+```bash
+python restore_exact_heatmap.py "path/to/your_image.png" "City Name"
+```
+
+**Examples:**
+```bash
+# Example 1: Run on Gandhinagar
+python restore_exact_heatmap.py "gandhinagar.png" "Gandhinagar"
+
+# Example 2: Run on Leh, Ladakh
+python restore_exact_heatmap.py "leh.png" "Leh Ladakh"
+
+# Example 3: Run on Chandigarh
+python restore_exact_heatmap.py "chandigarh.png" "Chandigarh"
+```
+
+### 3. Check the Results
+Outputs are automatically saved inside the **`results/`** folder:
+- **`results/<city_name>_exact_4panel.png`**: High-resolution 4-panel diagnostic sheet:
+  1. Original Satellite Image
+  2. Neural Road Probability Heatmap
+  3. Clean Road Topology Skeleton
+  4. Crisp Red Vector Road Overlay
+- **`results/<city_name>_exact_overlay.png`**: High-resolution standalone red road overlay.
+
+---
+
+## 🌟 Key Features
+
 
 - **Large GeoTIFF Streaming ($4\text{K} - 20\text{K}+$ resolution)**: Streaming windowed I/O using Rasterio and Tile Generators. Never loads massive rasters into GPU memory at once.
 - **Overlap-Aware Gaussian Blending**: Seamless multi-tile probability surface stitching without edge artifacts.

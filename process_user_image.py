@@ -178,8 +178,13 @@ def process_satellite_image(img_path, out_dir="results", artifact_dir=None, pref
     return four_panel_path, overlay_path
 
 if __name__ == "__main__":
-    img_path = sys.argv[1] if len(sys.argv) > 1 else r"C:\Users\91704\.gemini\antigravity-ide\brain\7c827e02-2c75-495d-84bc-c8fcac11281a\.user_uploaded\media_1787164503305.png"
-    prefix = sys.argv[2] if len(sys.argv) > 2 else "scene5"
-    out_dir = r"c:\Users\91704\Desktop\sih1\results"
-    artifact_dir = r"C:\Users\91704\.gemini\antigravity-ide\brain\7c827e02-2c75-495d-84bc-c8fcac11281a"
-    process_satellite_image(img_path, out_dir, artifact_dir, prefix=prefix)
+    import argparse
+    parser = argparse.ArgumentParser(description="Process satellite imagery for neural road extraction.")
+    parser.add_argument("img_path", nargs="?", default=r"C:\Users\91704\.gemini\antigravity-ide\brain\e504882f-3e3a-48f2-adcd-b7919c69e834\.user_uploaded\media_1787245126613.png", help="Path to input satellite image")
+    parser.add_argument("--prefix", "-p", default="scene6", help="Prefix for output files (e.g. scene6)")
+    parser.add_argument("--out_dir", "-o", default=r"c:\Users\91704\Desktop\sih1\results", help="Directory to save output files")
+    parser.add_argument("--artifact_dir", "-a", default=r"C:\Users\91704\.gemini\antigravity-ide\brain\e504882f-3e3a-48f2-adcd-b7919c69e834", help="Brain artifact directory")
+    args = parser.parse_args()
+
+    process_satellite_image(args.img_path, args.out_dir, args.artifact_dir, prefix=args.prefix)
+
